@@ -9,3 +9,4 @@ const obj = each(
   },
   (val) => console.log("each object value ", val)
 );
+console.log("wtf");
