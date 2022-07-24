@@ -1,12 +1,7 @@
-import each from "./modules/each/index.js";
+import map from "./modules/map/index.js";
 
-const arr = each([1, 2, 3], (val) => console.log("each array value ", val));
-const obj = each(
-  {
-    a: 1,
-    b: 2,
-    c: 3,
-  },
-  (val) => console.log("each object value ", val)
-);
-console.log("wtf");
+const a = map([1, 2, 3], (val) => val * 2);
+const b = map({ a: 1, b: 2, c: 3 }, (val) => val * 3);
+
+console.log(a);
+console.log(b);
