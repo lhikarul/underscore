@@ -1,7 +1,26 @@
-import map from "./modules/map/index.js";
+import reduce from "./modules/reduce/index.js";
 
-const a = map([1, 2, 3], (val) => val * 2);
-const b = map({ a: 1, b: 2, c: 3 }, (val) => val * 3);
+const sum = reduce(
+  [
+    [1, 2, 3],
+    [4, 5, 6],
+  ],
+  (prev, curr) => prev.concat(curr),
+  []
+);
 
-console.log(a);
-console.log(b);
+const sum2 = reduce([1, 2, 3], (prev, curr) => prev + curr, 0);
+
+const sum3 = reduce(
+  {
+    a: 1,
+    b: 2,
+    c: 3,
+  },
+  (prev, curr) => prev + curr,
+  0
+);
+
+console.log("sum1 ", sum);
+console.log("sum2 ", sum2);
+console.log("sum3 ", sum3);
