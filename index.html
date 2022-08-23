@@ -7,6 +7,27 @@
     <title>underscore</title>
   </head>
   <body>
-    <script src="./underscore.js"></script>
+    <script src="/underscore.js"></script>
+    <script>
+      const listOfPlays = [
+        {
+          author: "Shakespeare1",
+          year: 16111,
+        },
+        {
+          author: "Shakespeare",
+          book: "love",
+        },
+        {
+          author: "Evans",
+          year: 16111,
+        },
+        { author: "Shakespeare", year: 1611, book: "love" },
+      ];
+      console.log(
+        "123 ",
+        _.where(listOfPlays, { author: "Shakespeare", year: 1611 })
+      );
+    </script>
   </body>
 </html>
