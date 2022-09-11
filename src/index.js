@@ -1,6 +1,7 @@
 import isArrayLike from "./modules/isArrayLike";
 import keys from "./modules/keys";
-import contains from "./modules/contains";
+import intersection from "./modules/intersection";
 
-console.log(contains([1, 2, 3, 2], 6));
-// findIndex([1,2,3],(num) => num % 2 === 0)
+console.log(
+  intersection([1, 1, 1, 1, 1, 2, 1111], [1, 1, 1, 1, 4, 1111], [1111, 2, 4, 1])
+);
