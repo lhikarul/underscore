@@ -1,4 +1,4 @@
-import reduce from "./modules/reduce/index.js";
+import reduce from "./modules/reduce/index";
 
 const sum = reduce(
   [

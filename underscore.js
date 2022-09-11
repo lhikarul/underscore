@@ -591,6 +591,7 @@
   // Produce an array that contains every item shared between all the
   // passed-in arrays.
   _.intersection = function (array) {
+    // debugger;
     var result = [];
     var argsLength = arguments.length;
     for (var i = 0, length = getLength(array); i < length; i++) {
